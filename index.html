@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Todo App</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            <label for="new-task">Ajoute une tache</label>
+            <input id="new-task" type="text">
+            <button>Add</button>
+        </p>
+
+        <h3>A faire</h3>
+        <ul id="incomplete-tasks">
+            <li>
+                <input type="checkbox">
+                <label>aller chez le dentiste</label>
+                <input type="text">
+                <button class="edit">Modifier</button>
+                <button class="delete">Supprimer</button>
+            </li>
+            <li class="editMode">
+                <input type="checkbox">
+                <label>Faire des courses</label>
+                <input type="text" value="Go Shopping">
+                <button class="edit">Modifier</button>
+                <button class="delete">Supprimer</button>
+            </li>
+        </ul>
+
+        <h3>Completé</h3>
+        <ul id="completed-tasks">
+            <li>
+                <input type="checkbox" checked="">
+                <label>voir le Docteur</label>
+                <input type="text">
+                <button class="edit">Modifier</button>
+                <button class="delete">Supprimer</button>
+            </li>
+        </ul>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
